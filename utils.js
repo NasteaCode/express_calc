@@ -7,7 +7,8 @@ function convertStrNums(strNums) {
   // if the conversion isn't successful, throw a BadRequestError and will
   // be handled in your route
   for(let i = 0; i < strNums.length; i++) {
-    strNums[i] = parseInt(strNums[i]);
+    let val  = parseInt(strNums[i])
+    strNums[i] = val;
   }
 return strNums;
 }
